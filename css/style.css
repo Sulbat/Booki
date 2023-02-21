@@ -258,8 +258,8 @@ form {
 
 .conteneur3 {
     position: absolute;
-    bottom: -310px;
     cursor: pointer;
+    bottom: -310px;
 
 }
 
@@ -400,4 +400,11 @@ main a {
 .footer p {
     cursor: pointer;
 }
+
+.wrap {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
