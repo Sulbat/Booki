@@ -1,5 +1,4 @@
 * {
-  /* max-width: 1400px; */
   font-family: "Raleway", sans-serif;
   box-sizing: border-box;
 }
@@ -14,31 +13,24 @@ body {
 nav {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
   margin-top: 44px;
 }
 
 nav img {
-  width: 61.09px;
   height: 19px;
 }
 
 nav a {
-  margin-left: 67px;
   text-decoration: none;
   color: black;
+  padding: 11px 25px 0 15px;
 }
 
-/* lien */
-
-a:hover:before {
-  content: "";
-  position: absolute;
-  height: 2px;
-  width: 162px;
-  top: 0px;
-  background-color: #0065fc;
+nav a:hover {
+  color: #0065fc;
+  border-top: 2px #0065fc solid;
+  padding-top: 42.5px;
 }
 
 /* titres */
@@ -113,9 +105,9 @@ form {
 
 .filtres {
   display: flex;
-  flex-wrap: wrap; /* responsive reduction de site  */
   align-items: center;
   margin: 15px;
+  flex-wrap: wrap;
 }
 
 .filtres i {
@@ -307,7 +299,6 @@ main a {
 }
 
 .conteneur4 {
-  display: inline-block;
   margin-left: 37px;
   display: flex;
   align-items: center;
@@ -366,23 +357,94 @@ main a {
   padding: 10px 15px;
   background-color: #f2f2f2;
   margin-top: 60px;
+  justify-content: space-between;
 }
 
 .apropos {
-  margin-right: 230px;
   margin-left: 70px;
 }
 
-.noshebergements {
-  margin-right: 250px;
+.assistance {
+  margin-right: 348px;
 }
 
 .footer p {
   cursor: pointer;
 }
 
+/* largeur max */
+
 .wrap {
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* responsive */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .tout {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .populaires {
+    display: flex;
+    width: 883px;
+    height: 278px;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .cartespop {
+    width: 252px;
+    height: 144px;
+    margin-top: 100px;
+    display: none;
+  }
+
+  .cartespop img {
+    width: 106px;
+    height: 144px;
+  }
+
+  .cartes {
+    margin-left: 12px;
+    margin-right: 16px;
+  }
+
+  .conteneur3 {
+    bottom: -555px;
+  }
+
+  .cartesactivites {
+    width: 182px;
+    height: 267px;
+    margin-bottom: 69px;
+    /* margin: 0px; */
+  }
+
+  .cartesactivites img {
+    width: 182px;
+    height: 211px;
+  }
+
+  footer {
+    flex-wrap: wrap;
+  }
+
+  .apropos {
+    margin-left: 70.21px;
+  }
+
+  .assistance {
+    margin-right: 193.18px;
+  }
+
+  .ensemblecartesactivites {
+    max-width: 90%;
+    margin-left: 50px;
+    flex-wrap: wrap;
+    
+  }
 }
