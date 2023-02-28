@@ -555,7 +555,7 @@ main a {
     justify-content: center;
     align-items: center;
     padding-bottom: 5px;
-    width: 100%;
+    width: 100%;                        /*  probleme nav ici */
     border-bottom: 3px solid #f2f2f2;
   }
 
