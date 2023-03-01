@@ -4,8 +4,10 @@
 }
 
 body {
-  margin: 0;
+  margin-left: 55px;
+  margin-right: 77px;
 }
+
 /* header */
 
 nav {
@@ -181,8 +183,16 @@ form {
   margin-top: -30px;
 }
 
+.cartes {
+  margin-left: 31px;
+  min-width: 33%;
+  max-width: 90%;
+}
+
 .cartes img {
   border-radius: 20px 20px 0 0;
+  min-width: 40%;
+  max-width: 100%;
   width: 246px;
   height: 124px;
   border: 5px solid #ffffff;
@@ -191,6 +201,7 @@ form {
 
 .cartes p {
   margin-top: -15px;
+  font-size: 14px;
 }
 
 .etoilespleines {
@@ -214,7 +225,11 @@ form {
 .ensemblecartes2 {
   display: flex;
   padding: 4px 4px;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  width: 90%;
+  height: 240px;
+  margin-right: 20px;
+  margin-left: 0px;
 }
 
 .hebergements {
@@ -222,8 +237,8 @@ form {
   transition: 0.3s;
   border-radius: 20px;
   background-color: #f2f2f2;
-  width: 880px;
-  height: 626px;
+  padding-right: 40px;
+  padding-left: 9px;
   margin-top: 39px;
 }
 
@@ -250,6 +265,11 @@ main a {
   margin-top: 30px;
 }
 
+.ensemblecartes i,
+.ensemblecartes2 i {
+  margin-top: 15px;
+}
+
 /* Les plus populaires */
 
 .populaires {
@@ -257,8 +277,8 @@ main a {
   transition: 0.3s;
   border-radius: 20px;
   background-color: #f2f2f2;
-  height: 625px;
   margin-top: 39px;
+  margin-left: 35px;
 }
 
 .tout {
@@ -270,7 +290,6 @@ main a {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 20px;
-  width: 343px;
   height: 144px;
   background-color: white;
   display: flex;
@@ -278,6 +297,11 @@ main a {
   margin-top: 26px;
   margin-bottom: 34px;
   margin-right: 40px;
+}
+
+.cartespop p {
+  font-size: 14px;
+  margin-bottom: 40px;
 }
 
 .cartespop:hover {
@@ -290,6 +314,8 @@ main a {
   height: 144px;
   border: 5px solid #ffffff;
   object-fit: cover;
+  max-width: 90%;
+  min-width: 42%;
 }
 
 .cartespop p {
@@ -317,9 +343,11 @@ main a {
 .cartesactivites {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  width: 302px;
+  min-width: 21%;
   height: 444.51px;
   border-radius: 20px;
+  margin-right: 43px;
+  margin-left: 20px;
 }
 
 .cartesactivites:hover {
@@ -337,12 +365,13 @@ main a {
   height: 389px;
   border: 0px solid #ffffff;
   object-fit: cover;
+  min-width: 10%;
+  max-width: 100%;
 }
 
 .ensemblecartesactivites {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
 }
 
 /* footer */
@@ -378,8 +407,11 @@ main a {
 
 /* responsive */
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  body {
+    margin: 0;
+  }
+
   /* header */
 
   #logoBooki {
@@ -412,10 +444,23 @@ main a {
 
   .hebergements {
     width: 100%;
+    margin-left: 0px;
   }
 
   .conteneur3 {
     bottom: -555px;
+  }
+
+  .ensemblecartes,
+  .ensemblecartes2 {
+    height: 220px;
+    margin-right: 20px;
+    margin-left: 10px;
+  }
+
+  .ensemblecartes i,
+  .ensemblecartes2 i {
+    margin-top: 0px;
   }
 
   /* populaires */
@@ -423,6 +468,7 @@ main a {
   .populaires {
     width: 100%;
     height: 278px;
+    margin-left: 0;
   }
 
   .touteslescartespop {
@@ -431,22 +477,11 @@ main a {
   }
 
   .cartespop {
-    width: 252px;
     height: 144px;
-    margin-left: 23px;
-    margin-right: 0;
-  }
-
-  .cartepop1 {
-    margin-left: 17px;
-  }
-
-  .cartepop1 i {
-    margin-top: 20px;
-  }
-
-  .cartepop3 i {
-    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    min-width: 40%;
+    max-width: 90%;
   }
 
   .cartespop img {
@@ -463,24 +498,30 @@ main a {
     max-width: 110px;
     margin: 0px;
     margin-bottom: 20px;
-    margin-top: 12px;
+    margin-top: 5px;
   }
 
   .cartespop p {
-    font-size: 13px;
     margin-bottom: 39px;
   }
 
   /* activités */
 
   .cartesactivites {
-    width: 182px;
+    min-width: 21%;
     height: 267px;
+    margin: 17px;
+  }
+
+  .cartesactivites h4 {
+    margin-top: 5px;
   }
 
   .cartesactivites img {
     width: 182px;
     height: 211px;
+    min-width: 21%;
+    max-width: 100%;
   }
 
   .ensemblecartesactivites {
@@ -510,6 +551,9 @@ main a {
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    margin: 0;
+  }
 
   /* header */
 
@@ -549,7 +593,7 @@ main a {
     justify-content: center;
     align-items: center;
     padding-bottom: 5px;
-    width: 100%;                        
+    width: 100%;
     border-bottom: 3px solid #f2f2f2;
   }
 
@@ -562,7 +606,6 @@ main a {
   /* main */
 
   main {
-
     margin: 0;
   }
 
@@ -615,17 +658,21 @@ main a {
 
   /* section */
 
-  .sectionhebpop, .sectionact {
+  .sectionhebpop,
+  .sectionact {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    
   }
 
   /* populaires */
 
+  .populaires {
+    margin-left: 0;
+  }
+
   .conteneur4 {
-      justify-content:center;
+    justify-content: center;
   }
 
   .conteneur4 h3 {
@@ -639,17 +686,15 @@ main a {
     width: 100%;
     height: 100%;
     padding-bottom: 25px;
-    
   }
 
   .cartespop {
     margin-left: 0;
     margin: auto;
     margin-bottom: 11px;
-    min-width: 40%;
-    max-width: 90%;
+    min-width: 75%;
+    max-width: 75%;
   }
-
 
   /* hebergements */
 
@@ -678,7 +723,7 @@ main a {
   }
 
   .hebergements h3 {
-    margin-left: 20px;
+    text-align: start;
   }
 
   .ensemblecartes,
@@ -686,6 +731,12 @@ main a {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    margin-left: 30px;
+  }
+
+  .ensemblecartes i,
+  .ensemblecartes2 i {
+    margin-top: 0px;
   }
 
   .cartes {
@@ -702,15 +753,18 @@ main a {
   }
 
   .ensemblecartes2 {
-    margin-top: 0;
+    margin-top: 355px;
   }
 
   .conteneur3 {
     display: none;
   }
 
-
   /* activités */
+
+  .activites {
+    margin-top: 430px;
+  }
 
   .ensemblecartesactivites {
     display: flex;
@@ -732,7 +786,7 @@ main a {
   }
 
   .activites h3 {
-    text-align: center;
+    margin-left: 22px;
   }
 
   /* footer */
