@@ -112,7 +112,6 @@ form {
   align-items: center;
   margin-top: 15px;
   margin-bottom: 15px;
-  flex-wrap: wrap;
 }
 
 .filtres i {
@@ -125,7 +124,7 @@ form {
   font-size: 22px;
 }
 
-.filtres div {
+.iconesfiltres div {
   display: flex;
   align-items: center;
   margin-right: 22px;
@@ -139,13 +138,20 @@ form {
   height: 50px;
 }
 
+.iconesfiltres {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  min-width: 40%;
+}
+
 .filtres h3 {
   margin-right: 20px;
   margin-top: 14px;
   margin-bottom: 14px;
 }
 
-.filtres div:hover {
+.iconesfiltres div:hover {
   background-color: #deebff;
 }
 
@@ -435,6 +441,14 @@ main a {
     font-size: 17px;
   }
 
+  .filtres {
+    flex-wrap: wrap;
+  }
+
+  .iconesfiltres {
+    flex-wrap: wrap;
+  }
+
   /* hebergements */
 
   .tout {
@@ -651,10 +665,21 @@ main a {
 
   /* filtres */
 
-  .filtres div {
+  .iconesfiltres div {
     font-size: 11px;
     width: 160px;
+    margin-right: 10px;
   }
+
+  .filtres {
+    flex-wrap: wrap;
+  }
+
+  .iconesfiltres {
+    flex-wrap: wrap;
+    
+  }
+  
 
   /* section */
 
@@ -689,7 +714,8 @@ main a {
   }
 
   .cartespop {
-    margin-left: 0;
+    margin-left: 20px;
+    margin-right: 20px;
     margin: auto;
     margin-bottom: 11px;
     min-width: 75%;
@@ -731,7 +757,8 @@ main a {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    margin-left: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .ensemblecartes i,
@@ -773,11 +800,10 @@ main a {
   }
 
   .cartesactivites {
-    width: 334px;
     height: 190px;
     margin-bottom: 24px;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .cartesactivites img {
