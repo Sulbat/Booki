@@ -413,7 +413,7 @@ main a {
 
 /* responsive */
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
   body {
     margin: 0;
   }
@@ -718,9 +718,18 @@ main a {
     margin-right: 20px;
     margin: auto;
     margin-bottom: 11px;
-    min-width: 75%;
-    max-width: 75%;
   }
+
+  .cartepop1, .cartepop2 {
+    max-width: 334px;
+    margin: auto;
+  }
+
+.touteslescartespop {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
 
   /* hebergements */
 
@@ -728,10 +737,6 @@ main a {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-  }
-
-  .conteneur2 {
-    text-align: center;
   }
 
   .hebergements {
@@ -742,6 +747,7 @@ main a {
     margin-top: 0%;
     box-shadow: none;
     transition: none;
+    padding: 0;
   }
 
   .hebergements:hover {
@@ -749,7 +755,7 @@ main a {
   }
 
   .hebergements h3 {
-    text-align: start;
+    text-align:center;
   }
 
   .ensemblecartes,
@@ -757,8 +763,8 @@ main a {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 100%;
+    margin-right: 0;
   }
 
   .ensemblecartes i,
@@ -771,6 +777,7 @@ main a {
     max-width: 90%;
     margin-bottom: 12px;
     width: 335px;
+    margin-left: 0;
   }
 
   .cartes img {
@@ -790,7 +797,7 @@ main a {
   /* activités */
 
   .activites {
-    margin-top: 430px;
+    margin-top: 410px;
   }
 
   .ensemblecartesactivites {
@@ -812,7 +819,7 @@ main a {
   }
 
   .activites h3 {
-    margin-left: 22px;
+    text-align: center;
   }
 
   /* footer */
